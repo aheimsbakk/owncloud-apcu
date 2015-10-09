@@ -1,6 +1,6 @@
 # Supported tags
 
-* `latest` - Initial owncloud:8 with APCu enabled
+* `8`, `latest` - Initial owncloud:8 with APCu enabled
 
 ## What is owncloud-apcu
 
