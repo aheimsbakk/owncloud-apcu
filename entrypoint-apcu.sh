@@ -6,8 +6,8 @@
 # Configfile for owncloud
 CONF=/var/www/html/config/config.php
 
-# Add APCu
-cat <<EOF > $CONF
+# Add APCu if config file isn't created
+test -f $CONF || cat <<EOF > $CONF
 <?php 
 \$CONFIG = array ( 
     'memcache.local' => '\OC\Memcache\APCu', 
