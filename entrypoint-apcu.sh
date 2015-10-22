@@ -11,6 +11,7 @@ test -f $CONF || cat <<EOF > $CONF
 <?php 
 \$CONFIG = array ( 
     'memcache.local' => '\OC\Memcache\APCu', 
+    'overwriteprotocol' => 'https',
 );
 EOF
 
